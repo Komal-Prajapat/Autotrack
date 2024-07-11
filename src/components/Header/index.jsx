@@ -73,7 +73,7 @@ const Navbar = () => {
               id="basic-navbar-nav"
               className={`${menuOpen ? "show" : ""}`}
             >
-              <Nav className="ml-auto justify-content-between align-items-center">
+              <Nav className="ml-auto justify-content-between align-items-center  LinkForMobile">
                 <Nav.Link
                   as={HashLink}
                   smooth

@@ -1,6 +1,9 @@
 @media (min-width: 1200px) {
-    #howWeWork {
-       padding: 0px, 158px, 0px, 158px;
+    .howToWorkRow {
+       padding-left:158px;
+       padding-right:158px;
+    }.howtoworkRowdiv{
+        width: 550px;
     }
 }
 .howtoworkRowHeading{

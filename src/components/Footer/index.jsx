@@ -31,6 +31,7 @@ const Footer = () => {
           src={footerlogo}
           alt="Logo"
           style={{ maxWidth: "300px", height: "111.29px" }}
+          className="footerlogo"
         />
         <Row>
           {/* Column 1 */}
