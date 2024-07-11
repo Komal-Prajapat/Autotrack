@@ -14,8 +14,9 @@ import footerlogo from "../../assets/footerlogo.svg";
 import footerbg_ from "../../assets/footerbg_.jpeg";
 import "./index.css";
 import { FaSquareTwitter } from "react-icons/fa6";
-import { MdOutlineMailOutline, MdPhoneInTalk } from "react-icons/md";
+import { MdEmail, MdLocationPin, MdOutlineMailOutline, MdPhoneInTalk } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
+import phone from '../../assets/icon/phone.svg'
 const Footer = () => {
   return (
     <footer
@@ -39,12 +40,14 @@ const Footer = () => {
           <Col xs={12} sm={6} md={4} lg={5} className="mt-3">
             <div className="d-flex text align-items-center juc">
               <div className="">
-                <p className="ml-3 LinkFooter">
-                Our mission is to empower individuals and  businesses by providing them with the innovative financial process solutions they need to achieve their goals.
-                </p>
+                <p className=" LinkFooter mx-4 ">
+                Our mission is to empower individuals and  businesses by providing them with the innovative financial process solutions they</p>
+                {/* <p className="LinkFooter mx-4">they</p> */}
+                 <p className="LinkFooter mx-4"> need to achieve their goals.</p>
+                
               </div>
             </div>
-            <div className="mt-3 footericon">
+            <div className="mt-3 footericon mx-4">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
@@ -84,17 +87,17 @@ const Footer = () => {
           <Col xs={12} sm={6} md={4} lg={3} className=" mt-3" >
             <h5 className="LinkFooter">OUR SERVICES</h5>
             <ul className="list-unstyled">
-              <li className="LinkFooter">Bank Management</li>
-              <li className="LinkFooter">Dealer Management</li>
-              <li className="LinkFooter">Salesmen App</li>
-              <li className="LinkFooter">Car loan Management</li>
+              <li className="LinkFooter mt-3">Bank Management</li>
+              <li className="LinkFooter mt-3">Dealer Management</li>
+              <li className="LinkFooter mt-3">Salesmen App</li>
+              <li className="LinkFooter mt-3">Car loan Management</li>
             </ul>
           </Col>
 
           {/* Column 3 */}
           <Col xs={12} sm={6} md={4} lg={4} className="mt-3">
             <h5 className="text-white">Contact Us</h5>
-            <ul className="list-unstyled">
+            <ul className="list-unstyled mt-3">
               <li className="d-flex">
                 <div className=" footericon">
                   <a
@@ -103,7 +106,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="social-link "
                   >
-                  <MdPhoneInTalk />
+                  <img src={phone} alt="" />
                   </a>
                 </div>
                 <a href="tel:+84936527275" className="LinkFooter mx-2"
@@ -125,7 +128,7 @@ const Footer = () => {
                   textDecoration:"none"
                 }}
                   >
-                   <MdOutlineMailOutline />
+                <MdEmail />
                   </a>
                 </div>
                 <a href="mailto:business@platforma.vn" className="LinkFooter mx-2"
@@ -144,7 +147,7 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="social-link "
                   >
-                <CiLocationOn />
+              <MdLocationPin />
                   </a>
                 </div>
                <div className="LinkFooter mx-2"> 
