@@ -1,0 +1,17 @@
+@media (min-width: 1200px) {
+    #howWeWork {
+       padding: 0px, 158px, 0px, 158px;
+    }
+}
+.howtoworkRowHeading{
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(42, 104, 119, 1);
+
+}
+.howtoworkRowP{
+    font-size: 18px;
+    line-height: 23.44px;
+    color: rgba(66, 69, 69, 1);
+}
