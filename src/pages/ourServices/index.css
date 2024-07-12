@@ -22,3 +22,10 @@
     font-size: 18px;
     color: rgba(127, 122, 122, 1);
 }
+
+
+@media (max-width: 575.98px) {
+ .serviceRow{
+    padding: 10px;
+ }
+}

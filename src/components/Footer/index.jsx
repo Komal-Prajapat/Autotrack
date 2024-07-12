@@ -40,10 +40,10 @@ const Footer = () => {
           <Col xs={12} sm={6} md={4} lg={5} className="mt-3">
             <div className="d-flex text align-items-center juc">
               <div className="">
-                <p className=" LinkFooter mx-4 ">
+                <p className=" LinkFooter ">
                 Our mission is to empower individuals and  businesses by providing them with the innovative financial process solutions they</p>
                 {/* <p className="LinkFooter mx-4">they</p> */}
-                 <p className="LinkFooter mx-4"> need to achieve their goals.</p>
+                 <p className="LinkFooter "> need to achieve their goals.</p>
                 
               </div>
             </div>

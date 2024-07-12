@@ -3,6 +3,7 @@ import { Container, Row, Col, Image, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import about from "../../assets/about.svg";
 import ButtonCom from "../../components/Button/index";
+import './index.css'
 const AboutUsPage = () => {
   return (
     <div
@@ -54,6 +55,7 @@ const AboutUsPage = () => {
                 paddingTop: "47px",
                 paddingBottom: "47px",
               }}
+              className="aboutForm"
             >
               <Form.Group
                 style={{
