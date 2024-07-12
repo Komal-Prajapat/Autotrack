@@ -1,24 +1,23 @@
-/* Default styles for h1 */
 h1 {
-    font-size: 32px; /* Default font size for h1 */
+  font-size: 32px;
+
+}
+@media (min-width: 1200px) {
+  .homeheading {
+    font-size: 58px !important;
   }
-  
-  @media (min-width: 1200px) {
-    .homeheading {
-        font-size: 58px !important;
-    }
 }
 
-.getStartedbtn{
+.getStartedbtn {
   width: 126px;
   height: 48px;
   border-radius: 50px;
   margin-top: 10px;
-  background: white;
-  border: 2px solid rgba(42, 104, 119, 1);
-color: rgba(42, 104, 119, 1);
-font-weight: 500;
-  color: color;
+  background: var(--colorwhite);
+  border: 2px solid var(--colorprimary);
+  color: var(--colorprimary);
+  font-weight: 500;
+
   font-size: 16px;
   line-height: 24px;
 }

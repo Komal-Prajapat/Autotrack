@@ -111,7 +111,7 @@ const Navbar = () => {
                 smooth
                 to='#about'
                 >
-                  <Button
+                  <Button xs="auto"
                     name="Contact us"
                     bgcolor="#2A6877"
                     color="#FFFFFF"

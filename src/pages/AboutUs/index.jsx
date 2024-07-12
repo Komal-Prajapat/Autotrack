@@ -3,7 +3,7 @@ import { Container, Row, Col, Image, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import about from "../../assets/about.svg";
 import ButtonCom from "../../components/Button/index";
-import './index.css'
+import "./index.css";
 const AboutUsPage = () => {
   return (
     <div
@@ -35,6 +35,9 @@ const AboutUsPage = () => {
             <p
               style={{
                 marginTop: "24px",
+                color: "var(--colorDarblack)",
+                fontWeight: "400",
+                fontSize: "var(--medium)",
               }}
             >
               Platform A - Your trusted platform of dealers and financial
@@ -63,17 +66,21 @@ const AboutUsPage = () => {
                 }}
                 controlId="yourName"
               >
-                <Form.Label style={{
-                  fontSize:"16px",
-                  fontWeight:"400"
-                  ,
-                  lineHeight:"18.78px"
-                }}> Your Name</Form.Label>
+                <Form.Label
+                  style={{
+                    fontSize: "var(--vsmall)",
+                    fontWeight: "400",
+                    lineHeight: "18.78px",
+                  }}
+                >
+                  {" "}
+                  Your Name
+                </Form.Label>
                 <Form.Control
                   type="text"
                   style={{
                     border: "1px solid #756E6E",
-                    borderRadius:"20px"
+                    borderRadius: "20px",
                   }}
                 />
               </Form.Group>
@@ -83,17 +90,20 @@ const AboutUsPage = () => {
                 }}
                 controlId="dealerName"
               >
-                <Form.Label style={{
-                  fontSize:"16px",
-                  fontWeight:"400"
-                  ,
-                  lineHeight:"18.78px"
-                }}>Dealer Name/Bank Name</Form.Label>
+                <Form.Label
+                  style={{
+                    fontSize: "var(--vsmall)",
+                    fontWeight: "400",
+                    lineHeight: "18.78px",
+                  }}
+                >
+                  Dealer Name/Bank Name
+                </Form.Label>
                 <Form.Control
                   type="text"
                   style={{
                     border: "1px solid #756E6E",
-                    borderRadius:"20px"
+                    borderRadius: "20px",
                   }}
                 />
               </Form.Group>
@@ -103,17 +113,20 @@ const AboutUsPage = () => {
                 }}
                 controlId="phoneNumber"
               >
-                <Form.Label style={{
-                  fontSize:"16px",
-                  fontWeight:"400"
-                  ,
-                  lineHeight:"18.78px"
-                }}>Phone Number</Form.Label>
+                <Form.Label
+                  style={{
+                    fontSize: "var(--vsmall)",
+                    fontWeight: "400",
+                    lineHeight: "18.78px",
+                  }}
+                >
+                  Phone Number
+                </Form.Label>
                 <Form.Control
                   type="tel"
                   style={{
                     border: "1px solid #756E6E",
-                    borderRadius:"20px"
+                    borderRadius: "20px",
                   }}
                 />
               </Form.Group>
@@ -123,27 +136,27 @@ const AboutUsPage = () => {
                 }}
                 controlId="emailAddress"
               >
-                <Form.Label style={{
-                  fontSize:"16px",
-                  fontWeight:"400"
-                  ,
-                  lineHeight:"18.78px"
-                }}>Email Address</Form.Label>
+                <Form.Label
+                  style={{
+                    fontSize: "var(--vsmall)",
+                    fontWeight: "400",
+                    lineHeight: "18.78px",
+                  }}
+                >
+                  Email Address
+                </Form.Label>
                 <Form.Control
                   type="email"
                   style={{
                     border: "1px solid #756E6E",
-                    borderRadius:"20px"
+                    borderRadius: "20px",
                   }}
                 />
               </Form.Group>
 
-              <ButtonCom
-                name="Send"
-                color="rgba(255, 255, 255, 1)"
-                bgcolor="rgba(42, 104, 119, 1)"
-                margin_top="20px"
-              ></ButtonCom>
+              <div className="d-flex justify-content-center">
+                <ButtonCom name="Send" x margin_top="20px"></ButtonCom>
+              </div>
             </Form>
           </Col>
         </Row>

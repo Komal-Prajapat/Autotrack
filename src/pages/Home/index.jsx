@@ -1,8 +1,7 @@
 import React from "react";
 import "./index.css";
 import homeimg from "../../assets/homeimage.svg";
-import ButtonCom from "../../components/Button";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Home = () => {
   return (
@@ -11,16 +10,16 @@ const Home = () => {
       style={{
         marginTop: "100px",
         marginBottom: "100px",
-      
       }}
     >
       {/* Left Side Content */}
       <Row
-      style={{
-        justifyContent:"Center",
-        justifyItems:"Center",
-        display:"flex"
-      }}>
+        style={{
+          justifyContent: "Center",
+          justifyItems: "Center",
+          display: "flex",
+        }}
+      >
         <Col
           xs={12}
           sm={12}
@@ -32,37 +31,43 @@ const Home = () => {
           <h1
             className="h1-responsive homeheading"
             style={{
-              color: "rgba(42, 104, 119, 1)",
+              color: "var(--colorprimary)",
               fontWeight: "700",
-             
             }}
-            
           >
-         Quick and Easy Loan options for Car Dealers to serve car buyers
+            Quick and Easy Loan options for Car Dealers to serve car buyers
           </h1>
           <p
             style={{
-              color: "#424545",
+              color: "var(--colorblack)",
               lineHeight: "23.44px",
-              fontSize: "18px",
+              fontSize: "var(--small)",
               fontWeight: "400",
-             letterSpacing:"0.5px",
-             marginTop:"16px"
-            
+              letterSpacing: "0.5px",
+              marginTop: "16px",
             }}
           >
-           Our enterprise SaaS platform offers a hassle-free and streamlined financing experience, providing Car Dealers with the Finance Partner options to fund their customers need in a timely manner to meet the financial requirements. Get started
+            Our enterprise SaaS platform offers a hassle-free and streamlined
+            financing experience, providing Car Dealers with the Finance Partner
+            options to fund their customers need in a timely manner to meet the
+            financial requirements. Get started
           </p>
-        <button className="getStartedbtn"> Get started</button>
+          <button className="getStartedbtn"> Get started</button>
         </Col>
 
         {/* Right Side Image */}
-        <Col xs={12} sm={12} md={6} lg={4} xl={5}
+        <Col
+          xs={12}
+          sm={12}
+          md={6}
+          lg={4}
+          xl={5}
           style={{
-        justifyContent:"Center",
-        justifyItems:"Center",
-        display:"flex"
-      }}>
+            justifyContent: "Center",
+            justifyItems: "Center",
+            display: "flex",
+          }}
+        >
           <img src={homeimg} alt="" className="img-fluid" />
         </Col>
       </Row>

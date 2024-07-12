@@ -1,20 +1,24 @@
 @media (min-width: 1200px) {
     .howToWorkRow {
-       padding-left:158px;
-       padding-right:158px;
-    }.howtoworkRowdiv{
+        padding-left: 158px;
+        padding-right: 158px;
+    }
+
+    .howtoworkRowdiv {
         width: 550px;
     }
 }
-.howtoworkRowHeading{
+
+.howtoworkRowHeading {
     font-size: 33px;
     font-weight: 700;
     line-height: 56px;
     color: rgba(42, 104, 119, 1);
 
 }
-.howtoworkRowP{
-    font-size: 18px;
+
+.howtoworkRowP {
+    font-size: var(--small);
     line-height: 23.44px;
     color: rgba(66, 69, 69, 1);
 }

@@ -1,21 +1,4 @@
-.footericon a {
-    
-        width: 19.73px;
-        height: 20px;
-        border-radius: 100%;
-        background-color: white;
-        color: black;
-        padding: 4px;
-        margin: 3px;
-        text-align: center;
-    
+.LinkFooter {
+        color: var(--colorwhite);
 }
-.LinkFooter{
-        color: white;
-}
-.LinkFooter:hover {
-        /* border-bottom: 2px solid white; */
-        border-right: 20%; 
-        color: white;
-      }
-      
+
