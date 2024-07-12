@@ -19,7 +19,7 @@ const OurServices = () => {
       <h1 className="componentHeading h1-responsive text-center m-5 pt-4">
         Our Services
       </h1>
-      <Row className="justify-content-around serviceRow">
+      <Row className="justify-content-around serviceRow" >
         {/* Service 1 */}
         <Col xl={3} lg={4} md={5} sm={10} className="servicebox mr-sm-3  p-3">
           <img

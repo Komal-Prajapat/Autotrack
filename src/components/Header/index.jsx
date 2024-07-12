@@ -52,7 +52,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); 
+  }, []);
   return (
     <>
       <div className={`navbar-container ${isSticky ? "sticky" : ""}`}>
@@ -106,12 +106,14 @@ const Navbar = () => {
                 >
                   About Us
                 </Nav.Link>
-                <Nav.Link className="ContactUS"
-                as={HashLink}
-                smooth
-                to='#about'
+                <Nav.Link
+                  className="ContactUS"
+                  as={HashLink}
+                  smooth
+                  to="#about"
                 >
-                  <Button xs="auto"
+                  <Button
+                    xs="auto"
                     name="Contact us"
                     bgcolor="#2A6877"
                     color="#FFFFFF"
@@ -124,17 +126,51 @@ const Navbar = () => {
         </BootstrapNavbar>
       </div>
       {/* *********************** */}
-      <div id="home">
+      <div
+        id="home"
+        style={{
+          visibility: "hidden",
+        }}
+      >
+        fdss
+      </div>
+      <div>
         <Home />
       </div>
-      <div id="services">
+      <div
+        id="services"
+        style={{
+          visibility: "hidden",
+        }}
+      >
+        fdss
+      </div>
+      <div>
         <OurServices />
       </div>
-      <div id="how-we-work">
+      <div
+        id="how-we-work"
+        style={{
+          visibility: "hidden",
+        }}
+      >
+        fdss
+      </div>
+
+      <div id="">
         <HowWeWork />
       </div>
-      <div id="about">
-        <AboutUs  />
+
+      <div
+        id="about"
+        style={{
+          visibility: "hidden",
+        }}
+      >
+        fdss
+      </div>
+      <div >
+        <AboutUs />
       </div>
     </>
   );
