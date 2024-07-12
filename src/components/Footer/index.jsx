@@ -47,12 +47,12 @@ const Footer = () => {
                 
               </div>
             </div>
-            <div className="mt-3 footericon mx-4">
+            <div className="mt-3 footericon ">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link "
+                className="social-link mx-2"
               >
                 <FaFacebookF />
               </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                 href="https://www.twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link "
+                className="social-link mx-2"
               >
                 <FaTwitter />
               </a>
@@ -68,7 +68,7 @@ const Footer = () => {
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link "
+                className="social-link mx-2"
               >
                 <FaLinkedinIn />
               </a>
@@ -76,7 +76,7 @@ const Footer = () => {
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
+                className="social-link mx-2"
               >
                 <FaInstagramSquare />
               </a>
@@ -86,6 +86,13 @@ const Footer = () => {
           {/* Column 2 */}
           <Col xs={12} sm={6} md={4} lg={3} className=" mt-3" >
             <h5 className="LinkFooter">OUR SERVICES</h5>
+            <hr 
+              style={{
+                width:"78px",
+              color:"white",
+                border:"1px solid rgba(255, 255, 255)"
+              }}
+            />
             <ul className="list-unstyled">
               <li className="LinkFooter mt-3">Bank Management</li>
               <li className="LinkFooter mt-3">Dealer Management</li>
@@ -97,6 +104,13 @@ const Footer = () => {
           {/* Column 3 */}
           <Col xs={12} sm={6} md={4} lg={4} className="mt-3">
             <h5 className="text-white">Contact Us</h5>
+            <hr 
+              style={{
+                width:"78px",
+              color:"white",
+                border:"1px solid rgba(255, 255, 255)"
+              }}
+            />
             <ul className="list-unstyled mt-3">
               <li className="d-flex">
                 <div className=" footericon">

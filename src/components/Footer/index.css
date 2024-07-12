@@ -14,7 +14,7 @@
         color: white;
 }
 .LinkFooter:hover {
-        border-bottom: 2px solid white;
+        /* border-bottom: 2px solid white; */
         border-right: 20%; 
         color: white;
       }
