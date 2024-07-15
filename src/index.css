@@ -94,7 +94,7 @@ body {
 
   --colorblack: rgba(73, 78, 79, 1);
   --colorwhite: rgba(255, 255, 255, 1);
-  --colorprimary: rgba(42, 104, 119, 1);
+  --colorprimary:#1b424c;
   --colorDarblack: rgba(66, 69, 69, 1);
     /* ************font size******************* */
 
