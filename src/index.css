@@ -108,7 +108,7 @@ body {
 
   /* / color code variable / */
 
-  --colorblack: rgba(73, 78, 79, 1);
+  --colorblack: #606566;
   --colorwhite: rgba(255, 255, 255, 1);
   --colorprimary: #1b424c;
   --colorDarblack: rgba(66, 69, 69, 1);
