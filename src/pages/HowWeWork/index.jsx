@@ -20,7 +20,7 @@ const HowWeWork = () => {
           fontWeight: "700",
         }}
       >
-        How We Work?
+        How we works ?
       </h1>
       <div
         className="howtoworkRowdiv"
@@ -74,18 +74,18 @@ const HowWeWork = () => {
         <Row className="align-items-center mb-4">
           <Col
             xs={12}
-            md={5}
-            lg={4}
-            xl={4}
+            md={6}
+            lg={5}
+            xl={6}
             className="mb-md-0 mb-4 order-md-2 px-md-0 pr-lg-5 justify-content-center d-flex"
           >
             <Image src={loan} alt="Loan Icon" fluid />
           </Col>
           <Col
             xs={12}
-            md={7}
-            lg={8}
-            xl={8}
+            md={6}
+            lg={7}
+            xl={6}
             className="order-md-1 px-md-0 pl-lg-5"
           >
             <Image src={two}></Image>
@@ -122,31 +122,32 @@ const HowWeWork = () => {
 
         {/* *******************4********* */}
 
+   
         <Row className="align-items-center mb-4">
           <Col
             xs={12}
-            md={5}
-            lg={4}
-            xl={4}
-            className="mb-md-0 mb-4 order-md-2 px-md-0 pr-lg-5 d-flex justify-content-center"
+            md={6}
+            lg={5}
+            xl={6}
+            className="mb-md-0 mb-4 order-md-2 px-md-0 pr-lg-5 justify-content-center d-flex"
           >
             <Image src={Disbursed} alt="Loan Icon" fluid />
           </Col>
           <Col
             xs={12}
-            md={7}
-            lg={8}
-            xl={8}
+            md={6}
+            lg={7}
+            xl={6}
             className="order-md-1 px-md-0 pl-lg-5"
           >
             <Image src={four}></Image>
             <h2 className="howtoworkRowHeading mx-5">Disbursed</h2>
             <p className="howtoworkRowP mx-5">
-              After borrower register the car and submit original registration
-              to bank, bank disburse loan to the Dealer.
+            After borrower register the car and submit original registration to bank, bank disburse loan to the Dealer.
             </p>
           </Col>
         </Row>
+
       </div>
     </Container>
   );

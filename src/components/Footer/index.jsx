@@ -32,8 +32,8 @@ const Footer = () => {
         <Row>
           {/* Column 1 */}
 
-          <Col xs={12} sm={6} md={4} lg={5} className="mt-3">
-            <div className="d-flex text align-items-center juc">
+          <Col xs={12} sm={6} md={4} lg={5} className="pt-3">
+            <div className="d-flex text align-items-center ">
               <div className="">
                 <p className=" LinkFooter ">
                   Our mission is to empower individuals and businesses by
@@ -47,7 +47,7 @@ const Footer = () => {
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-link mx-2"
+                className="social-link "
               >
                 <img src={fb} alt="" />
               </a>
@@ -79,15 +79,15 @@ const Footer = () => {
           </Col>
 
           {/* Column 2 */}
-          <Col xs={12} sm={6} md={4} lg={3} className=" mt-3">
-            <h5 className="LinkFooter">OUR SERVICES</h5>
-            <hr
-              style={{
-                width: "78px",
-                color: "white",
-                border: "1px solid rgba(255, 255, 255)",
-              }}
-            />
+          <Col xs={12} sm={6} md={4} lg={3} className="">
+          <span className="text-white pb-1"
+            style={{
+              borderBottom:"1px solid white ",
+              width:"50%"
+            }}
+            >OUR SER</span><span className="text-white">VICES</span>
+            
+          
             <ul className="list-unstyled">
               <li className="LinkFooter mt-3">Bank Management</li>
               <li className="LinkFooter mt-3">Dealer Management</li>
@@ -97,17 +97,16 @@ const Footer = () => {
           </Col>
 
           {/* Column 3 */}
-          <Col xs={12} sm={6} md={4} lg={4} className="mt-3">
-            <h5 className="text-white">CONTACT US</h5>
-            <hr
-              style={{
-                width: "78px",
-                color: "white",
-                border: "1px solid rgba(255, 255, 255)",
-              }}
-            />
-            <ul className="list-unstyled mt-3">
-              <li className="d-flex">
+          <Col xs={12} sm={6} md={4} lg={4} className="">
+            <span className="text-white pb-1"
+            style={{
+              borderBottom:"1px solid white",
+              width:"50%"
+            }}
+            >CONT</span><span className="text-white">ACT US</span>
+            
+            <ul className="list-unstyled ">
+              <li className="d-flex mt-3">
                 <div className="">
                   <a
                     href="https://www.facebook.com"

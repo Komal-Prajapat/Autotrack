@@ -29,7 +29,7 @@ const OurServices = () => {
             style={{}}
           />
           <h1 className="text-center">Flexible Options</h1>
-          <p className="text-center">
+          <p className="text-center pt-1">
             Dealer/car buyers can choose the loan that fits better with their
             financing budget by loan simulator Find out their loan eligibility
             while they are shopping in dealership Able to choose the best
@@ -38,14 +38,14 @@ const OurServices = () => {
         </Col>
 
         {/* Service 2 */}
-        <Col xl={3} lg={4} md={5} sm={10} className="servicebox ">
+        <Col xl={3} lg={4} md={5} sm={10} className="servicebox p-3 ">
           <img
             src={service2}
             alt=""
             className="img-fluid servicelogo pt-3 pb-3"
           />
           <h1 className="text-center"> Finance Partners</h1>
-          <p className="text-center">
+          <p className="text-center  pt-1">
             All financing applications are exclusive for partner banks ID
             verification and E-KYC are done before banks receive loan
             applications and able to pre-screen based on bank criteria Banks can
@@ -54,14 +54,14 @@ const OurServices = () => {
         </Col>
 
         {/* Service 3 */}
-        <Col xl={3} lg={4} md={5} sm={10} className="servicebox">
+        <Col xl={3} lg={4} md={5} sm={10} className="servicebox p-3">
           <img
             src={service3}
             alt=""
             className="img-fluid servicelogo pt-3 pb-3"
           />
           <h1 className="text-center">Dealer Management</h1>
-          <p className="text-center">
+          <p className="text-center pt-1">
             Centralized management of salesmen and loan applications Analytics
             for sales, process, banks and customers
           </p>
