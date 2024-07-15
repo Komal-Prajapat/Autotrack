@@ -37,6 +37,7 @@ body {
   
   color:var(--colorblack);
   margin-left: 20px;
+  font-family: var(--font-family-dm-sans);
 }
 
 .logoimg {

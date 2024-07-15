@@ -45,6 +45,7 @@ const Home = () => {
               fontWeight: "400",
               letterSpacing: "0.5px",
               marginTop: "16px",
+              fontFamily: "var(--font-family-dm-sans)",
             }}
           >
             Our enterprise SaaS platform offers a hassle-free and streamlined

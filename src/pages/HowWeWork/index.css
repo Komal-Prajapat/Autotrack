@@ -21,4 +21,5 @@
     font-size: var(--small);
     line-height: 23.44px;
     color: rgba(66, 69, 69, 1);
+    font-family: var(--font-family-dm-sans);
 }

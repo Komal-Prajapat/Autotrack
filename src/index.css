@@ -44,7 +44,7 @@ body {
     margin-top: 20px !important;
   }
 
-  .footerlogo{
+  .footerlogo {
     position: relative;
     left: -23px;
   }
@@ -57,8 +57,8 @@ body {
   .howWeWork {
     padding: 0px !important;
   }
-  
-  .footerlogo{
+
+  .footerlogo {
     position: relative;
     left: -23px;
   }
@@ -76,16 +76,16 @@ body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
-.footerlogo{
-  position: relative;
-  left: -23px;
-}
+  .footerlogo {
+    position: relative;
+    left: -23px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-  .footerlogo{
+  .footerlogo {
     position: relative;
     left: -23px;
   }
@@ -94,8 +94,15 @@ body {
 /* ****************************** Css Variable *************** */
 
 :root {
+
+
+  --font-family-dm-sans: 'DM Sans', sans-serif;
+  --font-family-poppins: 'Poppins', sans-serif;
+  --font-family-raleway: 'Raleway', sans-serif;
   /* / Font size variables / */
-  --vsmall:16px;
+
+
+  --vsmall: 16px;
   --small: 18px;
   --medium: 20px;
 
@@ -103,10 +110,10 @@ body {
 
   --colorblack: rgba(73, 78, 79, 1);
   --colorwhite: rgba(255, 255, 255, 1);
-  --colorprimary:#1b424c;
+  --colorprimary: #1b424c;
   --colorDarblack: rgba(66, 69, 69, 1);
-    /* ************font size******************* */
-    
+  /* ************font size******************* */
+
 
 
 }

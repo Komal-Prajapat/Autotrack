@@ -30,7 +30,10 @@ const HowWeWork = () => {
           margin: "auto",
         }}
       >
-        <p className="howtoworkRowP text-center " style={{}}>
+        <p className="howtoworkRowP text-center " style={{
+
+          fontFamily:"var(--font-family-dm-sans)"
+        }}>
           This is a process, how dealer salesmen support customers with Loan
           Options.
         </p>
@@ -89,7 +92,7 @@ const HowWeWork = () => {
             className="order-md-1 px-md-0 pl-lg-5"
           >
             <Image src={two}></Image>
-            <h2 className="howtoworkRowHeading mx-5">Loan Processing</h2>
+            <h2 className="howtoworkRowHeading mx-5">Loan Approval</h2>
             <p className="howtoworkRowP mx-5">
               Multiple Bank check the eligibility and Provides Approval with
               letter on the Platform A Bank Portal which is further notified on

@@ -38,6 +38,7 @@ const AboutUsPage = () => {
                 color: "var(--colorDarblack)",
                 fontWeight: "400",
                 fontSize: "var(--medium)",
+                fontFamily: "var(--font-family-dm-sans)",
               }}
             >
               Platform A - Your trusted platform of dealers and financial
@@ -155,7 +156,7 @@ const AboutUsPage = () => {
               </Form.Group>
 
               <div className="d-flex justify-content-center">
-                <ButtonCom name="Send" x margin_top="20px"></ButtonCom>
+                <ButtonCom name="SEND" x margin_top="20px"></ButtonCom>
               </div>
             </Form>
           </Col>

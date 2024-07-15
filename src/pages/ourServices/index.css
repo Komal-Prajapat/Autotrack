@@ -23,6 +23,7 @@
 .servicebox p {
     font-size: var(--small);
     color: var(--colorblack);
+    font-family: var(--font-family-poppins);
 }
 
 
