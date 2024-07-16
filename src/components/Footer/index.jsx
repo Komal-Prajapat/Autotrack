@@ -106,72 +106,65 @@ const Footer = () => {
             >CONT</span><span className="text-white">ACT US</span>
             
             <ul className="list-unstyled ">
-              <li className="d-flex mt-3">
-                <div className="">
-                  <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-link "
-                  >
-                    <img src={phone} alt="" />
-                  </a>
-                </div>
-                <a
-                  href="tel:+84936527275"
-                  className="LinkFooter mx-2"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  +84 936 527 275
-                </a>
-              </li>
-              <li className=" d-flex mt-3 ">
-                <div className="">
-                  <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-link "
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    <img src={email} alt="" />
-                  </a>
-                </div>
-                <a
-                  href="mailto:business@platforma.vn"
-                  className="LinkFooter mx-2"
-                  style={{
-                    textDecoration: "none",
-                  }}
-                >
-                  business@platforma.vn
-                </a>
-              </li>
-              <li className=" d-flex mt-3">
-                <div className="">
-                  <a
-                    href="https://www.facebook.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="social-link "
-                  >
-                    <img src={location} alt="" />
-                  </a>
-                </div>
-                <div className="LinkFooter mx-2">
-                  The Hive Thao Dien
-                  <br />
-                  94 Xuan Thuy Street,
-                  <br />
-                  Thao Dien Ward, HCMC
-                  <br />
-                  Vietnam
-                </div>
-              </li>
+            <li className="d-flex mt-3">
+  <div className="">
+    <a
+      href="tel:+84936527275"
+      className="social-link"
+      style={{ textDecoration: "none" }}
+    >
+      <img src={phone} alt="Phone Icon" />
+    </a>
+  </div>
+  <a
+    href="tel:+84936527275"
+    className="LinkFooter mx-2"
+    style={{ textDecoration: "none" }}
+  >
+    +84 936 527 275
+  </a>
+</li>
+
+<li className="d-flex mt-3">
+  <div className="">
+    <a
+      href="mailto:business@platforma.vn"
+      className="social-link"
+      style={{ textDecoration: "none" }}
+    >
+      <img src={email} alt="Email Icon" />
+    </a>
+  </div>
+  <a
+    href="mailto:business@platforma.vn"
+    className="LinkFooter mx-2"
+    style={{ textDecoration: "none" }}
+  >
+    business@platforma.vn
+  </a>
+</li>
+<li className="d-flex mt-3">
+  <div className="">
+    <a
+      href="https://maps.google.com/?q=94+Xuan+Thuy+Street,+Thao+Dien+Ward,+HCMC,+Vietnam"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="social-link"
+    >
+      <img src={location} alt="Location Icon" />
+    </a>
+  </div>
+  <div className="LinkFooter mx-2">
+    The Hive Thao Dien
+    <br />
+    94 Xuan Thuy Street,
+    <br />
+    Thao Dien Ward, HCMC
+    <br />
+    Vietnam
+  </div>
+</li>
+
             </ul>
           </Col>
         </Row>
