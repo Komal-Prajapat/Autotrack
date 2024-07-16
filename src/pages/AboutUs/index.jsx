@@ -1,10 +1,37 @@
 import React from "react";
 import { Container, Row, Col, Image, Form } from "react-bootstrap";
+import { Formik, Form as FormikForm, Field } from "formik";
+import * as Yup from "yup";
 import "bootstrap/dist/css/bootstrap.min.css";
 import about from "../../assets/about.svg";
 import ButtonCom from "../../components/Button/index";
 import "./index.css";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+const validationSchema = Yup.object().shape({
+  yourName: Yup.string()
+    .required("Your Name is required"),
+  dealerName: Yup.string()
+    .required("Dealer Name/Bank Name is required"),
+  phoneNumber: Yup.string()
+    .matches(/^[0-9]{10}$/, "Invalid phone number")
+    .required("Phone Number is required"),
+  emailAddress: Yup.string()
+    .email("Invalid email address")
+    .required("Email Address is required"),
+});
+
 const AboutUsPage = () => {
+  const handleSubmit = (values, { setSubmitting }) => {
+    // Log the form values to console
+    console.log(values);
+
+    // Example of what you might do next:
+    // Call an API, update state, etc.
+
+    setSubmitting(false);
+  };
+
   return (
     <div
       style={{
@@ -50,115 +77,96 @@ const AboutUsPage = () => {
           </Col>
 
           <Col xs={12} md={6} lg={5} xl={6}>
-            <Form
-              style={{
-                borderRadius: "20px",
-                background: "white",
-                paddingLeft: "45px",
-                paddingRight: "45px",
-                paddingTop: "47px",
-                paddingBottom: "47px",
+            <Formik
+              initialValues={{
+                yourName: "",
+                dealerName: "",
+                phoneNumber: "",
+                emailAddress: "",
               }}
-              className="aboutForm"
+              validationSchema={validationSchema}
+              onSubmit={handleSubmit}
             >
-              <Form.Group
-                style={{
-                  marginTop: "7px",
-                }}
-                controlId="yourName"
-              >
-                <Form.Label
+              {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
+                <FormikForm
                   style={{
-                    fontSize: "var(--vsmall)",
-                    fontWeight: "400",
-                    lineHeight: "18.78px",
-                  }}
-                >
-                  {" "}
-                  Your Name
-                </Form.Label>
-                <Form.Control
-                  type="text"
-                  style={{
-                    border: "1px solid #756E6E",
                     borderRadius: "20px",
+                    background: "white",
+                    paddingLeft: "45px",
+                    paddingRight: "45px",
+                    paddingTop: "47px",
+                    paddingBottom: "47px",
                   }}
-                />
-              </Form.Group>
-              <Form.Group
-                style={{
-                  marginTop: "7px",
-                }}
-                controlId="dealerName"
-              >
-                <Form.Label
-                  style={{
-                    fontSize: "var(--vsmall)",
-                    fontWeight: "400",
-                    lineHeight: "18.78px",
-                  }}
+                  className="aboutForm"
+                  onSubmit={handleSubmit}
                 >
-                  Dealer Name/Bank Name
-                </Form.Label>
-                <Form.Control
-                  type="text"
-                  style={{
-                    border: "1px solid #756E6E",
-                    borderRadius: "20px",
-                  }}
-                />
-              </Form.Group>
-              <Form.Group
-                style={{
-                  marginTop: "7px",
-                }}
-                controlId="phoneNumber"
-              >
-                <Form.Label
-                  style={{
-                    fontSize: "var(--vsmall)",
-                    fontWeight: "400",
-                    lineHeight: "18.78px",
-                  }}
-                >
-                  Phone Number
-                </Form.Label>
-                <Form.Control
-                  type="tel"
-                  style={{
-                    border: "1px solid #756E6E",
-                    borderRadius: "20px",
-                  }}
-                />
-              </Form.Group>
-              <Form.Group
-                style={{
-                  marginTop: "7px",
-                }}
-                controlId="emailAddress"
-              >
-                <Form.Label
-                  style={{
-                    fontSize: "var(--vsmall)",
-                    fontWeight: "400",
-                    lineHeight: "18.78px",
-                  }}
-                >
-                  Email Address
-                </Form.Label>
-                <Form.Control
-                  type="email"
-                  style={{
-                    border: "1px solid #756E6E",
-                    borderRadius: "20px",
-                  }}
-                />
-              </Form.Group>
+                  <Form.Group controlId="yourName">
+                    <Form.Label>Your Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="yourName"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.yourName}
+                      isInvalid={touched.yourName && !!errors.yourName}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.yourName}
+                    </Form.Control.Feedback>
+                  </Form.Group>
 
-              <div className="d-flex justify-content-center">
-                <ButtonCom name="SEND" x margin_top="20px"></ButtonCom>
-              </div>
-            </Form>
+                  <Form.Group controlId="dealerName">
+                    <Form.Label>Dealer Name/Bank Name</Form.Label>
+                    <Form.Control
+                      type="text"
+                      name="dealerName"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.dealerName}
+                      isInvalid={touched.dealerName && !!errors.dealerName}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.dealerName}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+
+                  <Form.Group controlId="phoneNumber">
+                    <Form.Label>Phone Number</Form.Label>
+                    <Form.Control
+                      type="tel"
+                      name="phoneNumber"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.phoneNumber}
+                      isInvalid={touched.phoneNumber && !!errors.phoneNumber}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.phoneNumber}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+
+                  <Form.Group controlId="emailAddress">
+                    <Form.Label>Email Address</Form.Label>
+                    <Form.Control
+                      type="email"
+                      name="emailAddress"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.emailAddress}
+                      isInvalid={touched.emailAddress && !!errors.emailAddress}
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      {errors.emailAddress}
+                    </Form.Control.Feedback>
+                  </Form.Group>
+
+                  <div className="d-flex justify-content-center">
+                  <ButtonCom type="button" name="SEND" margin_top="20px" disabled={isSubmitting}></ButtonCom>
+
+                  </div>
+                </FormikForm>
+              )}
+            </Formik>
           </Col>
         </Row>
       </Container>

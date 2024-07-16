@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import homeimg from "../../assets/homeimage.svg";
 import { Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -53,7 +54,9 @@ const Home = () => {
             options to fund their customers need in a timely manner to meet the
             financial requirements. Get started
           </p>
+          <Link    to="#GetStarted">
           <button className="getStartedbtn"> Get started</button>
+          </Link>
         </Col>
 
         {/* Right Side Image */}
