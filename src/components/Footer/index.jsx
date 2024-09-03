@@ -10,8 +10,18 @@ import fb from "../../assets/icon/fb.svg";
 import instagram from "../../assets/icon/instagram.svg";
 import linkdin from "../../assets/icon/linkdin.svg";
 import wp from "../../assets/icon/wp.svg";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleclick = () => {
+    navigate("/privacyPolicy");
+  };
+
+  const handleclick1 = () => {
+    navigate("/termsCondition");
+  };
   return (
     <footer
       className=" py-5 footerContainer"
@@ -80,91 +90,100 @@ const Footer = () => {
 
           {/* Column 2 */}
           <Col xs={12} sm={6} md={4} lg={3} className="">
-          <span className="text-white pb-1"
-            style={{
-              borderBottom:"1px solid white ",
-              width:"50%"
-            }}
-            >OUR SER</span><span className="text-white">VICES</span>
-            
-          
+            <span
+              className="text-white pb-1"
+              style={{
+                borderBottom: "1px solid white ",
+                width: "50%",
+              }}
+            >
+              OUR SER
+            </span>
+            <span className="text-white">VICES</span>
+
             <ul className="list-unstyled">
               <li className="LinkFooter mt-3">Bank Management</li>
               <li className="LinkFooter mt-3">Dealer Management</li>
               <li className="LinkFooter mt-3">Salesmen App</li>
               <li className="LinkFooter mt-3">Car loan Management</li>
+              <li className="LinkFooter mt-3" onClick={handleclick1}>Terms & Conditions</li>
+              
+        <li className="LinkFooter mt-3" onClick={handleclick}>Privacy Policy</li>
             </ul>
           </Col>
 
           {/* Column 3 */}
           <Col xs={12} sm={6} md={4} lg={4} className="">
-            <span className="text-white pb-1"
-            style={{
-              borderBottom:"1px solid white",
-              width:"50%"
-            }}
-            >CONT</span><span className="text-white">ACT US</span>
-            
+            <span
+              className="text-white pb-1"
+              style={{
+                borderBottom: "1px solid white",
+                width: "50%",
+              }}
+            >
+              CONT
+            </span>
+            <span className="text-white">ACT US</span>
+
             <ul className="list-unstyled ">
-            <li className="d-flex mt-3">
-  <div className="">
-    <a
-      href="tel:+84936527275"
-      className="social-link"
-      style={{ textDecoration: "none" }}
-    >
-      <img src={phone} alt="Phone Icon" />
-    </a>
-  </div>
-  <a
-    href="tel:+84936527275"
-    className="LinkFooter mx-2"
-    style={{ textDecoration: "none" }}
-  >
-    +84 936 527 275
-  </a>
-</li>
+              <li className="d-flex mt-3">
+                <div className="">
+                  <a
+                    href="tel:+84936527275"
+                    className="social-link"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <img src={phone} alt="Phone Icon" />
+                  </a>
+                </div>
+                <a
+                  href="tel:+84936527275"
+                  className="LinkFooter mx-2"
+                  style={{ textDecoration: "none" }}
+                >
+                  +84 936 527 275
+                </a>
+              </li>
 
-<li className="d-flex mt-3">
-  <div className="">
-    <a
-      href="mailto:business@platforma.vn"
-      className="social-link"
-      style={{ textDecoration: "none" }}
-    >
-      <img src={email} alt="Email Icon" />
-    </a>
-  </div>
-  <a
-    href="mailto:business@platforma.vn"
-    className="LinkFooter mx-2"
-    style={{ textDecoration: "none" }}
-  >
-    business@platforma.vn
-  </a>
-</li>
-<li className="d-flex mt-3">
-  <div className="">
-    <a
-      href="https://maps.google.com/?q=94+Xuan+Thuy+Street,+Thao+Dien+Ward,+HCMC,+Vietnam"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="social-link"
-    >
-      <img src={location} alt="Location Icon" />
-    </a>
-  </div>
-  <div className="LinkFooter mx-2">
-    The Hive Thao Dien
-    <br />
-    94 Xuan Thuy Street,
-    <br />
-    Thao Dien Ward, HCMC
-    <br />
-    Vietnam
-  </div>
-</li>
-
+              <li className="d-flex mt-3">
+                <div className="">
+                  <a
+                    href="mailto:business@platforma.vn"
+                    className="social-link"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <img src={email} alt="Email Icon" />
+                  </a>
+                </div>
+                <a
+                  href="mailto:business@platforma.vn"
+                  className="LinkFooter mx-2"
+                  style={{ textDecoration: "none" }}
+                >
+                  business@platforma.vn
+                </a>
+              </li>
+              <li className="d-flex mt-3">
+                <div className="">
+                  <a
+                    href="https://maps.google.com/?q=94+Xuan+Thuy+Street,+Thao+Dien+Ward,+HCMC,+Vietnam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="social-link"
+                  >
+                    <img src={location} alt="Location Icon" />
+                  </a>
+                </div>
+                <div className="LinkFooter mx-2">
+                  The Hive Thao Dien
+                  <br />
+                  94 Xuan Thuy Street,
+                  <br />
+                  Thao Dien Ward, HCMC
+                  <br />
+                  Vietnam
+                </div>
+              </li>
             </ul>
           </Col>
         </Row>

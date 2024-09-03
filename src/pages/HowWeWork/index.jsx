@@ -9,10 +9,13 @@ import one from "../../assets/number/one.svg";
 import three from "../../assets/number/three.svg";
 import four from "../../assets/number/four.svg";
 import "./index.css";
+import HeaderMain from "../../components/Header/headerMain";
 
 const HowWeWork = () => {
   return (
-    <Container fluid id="howWeWork" className="p-lg-5 ">
+  <>
+  {/* <HeaderMain/> */}
+  <Container fluid id="howWeWork" className="p-lg-5 ">
       <h1
         className="text-center "
         style={{
@@ -153,6 +156,7 @@ const HowWeWork = () => {
 
       </div>
     </Container>
+  </>
   );
 };
 

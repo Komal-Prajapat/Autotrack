@@ -8,6 +8,7 @@ import ButtonCom from "../../components/Button/index";
 import "./index.css";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import HeaderMain from "../../components/Header/headerMain";
 const validationSchema = Yup.object().shape({
   yourName: Yup.string()
     .required("Your Name is required"),
@@ -33,6 +34,8 @@ const AboutUsPage = () => {
   };
 
   return (
+  <>
+  {/* <HeaderMain/> */}
     <div
       style={{
         padding: "45px 47px 45px 47px",
@@ -42,6 +45,7 @@ const AboutUsPage = () => {
       }}
       className="AboutContainer"
     >
+      {/* <HeaderMain/> */}
       <Container fluid>
         <Row
           style={{
@@ -170,7 +174,7 @@ const AboutUsPage = () => {
           </Col>
         </Row>
       </Container>
-    </div>
+    </div></>
   );
 };
 

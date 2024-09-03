@@ -3,9 +3,12 @@ import "./index.css";
 import homeimg from "../../assets/homeimage.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import HeaderMain from "../../components/Header/headerMain";
 
 const Home = () => {
   return (
+  <>
+  {/* <HeaderMain/> */}
     <Container
       className="homePageContainer "
       style={{
@@ -76,6 +79,7 @@ const Home = () => {
         </Col>
       </Row>
     </Container>
+  </>
   );
 };
 

@@ -4,10 +4,13 @@ import service2 from "../../assets/logo/service2.svg";
 import service3 from "../../assets/logo/service3.svg";
 import { Col, Container, Row } from "react-bootstrap";
 import "./index.css";
+import HeaderMain from "../../components/Header/headerMain";
 
 const OurServices = () => {
   return (
-    <Container
+  <>
+  {/* <HeaderMain/> */}
+  <Container
       fluid
       servicelogo
       className="OurservicesContainer"
@@ -73,6 +76,7 @@ const OurServices = () => {
         </Col>
       </Row>
     </Container>
+  </>
   );
 };
 

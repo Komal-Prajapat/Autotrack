@@ -1,4 +1,5 @@
 .LinkFooter {
         color: var(--colorwhite);
+        cursor: pointer;
 }
 
