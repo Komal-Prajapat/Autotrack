@@ -8,6 +8,7 @@ import Button from "../Button";
 import { Container, Navbar as BootstrapNavbar, Nav } from "react-bootstrap";
 import logo from "../../assets/logo.png";
 import "./index.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -106,6 +107,9 @@ const Navbar = () => {
                 >
                   About Us
                 </Nav.Link>
+                <NavLink className="nav-link" to="/privacyPolicy">
+                  Privacy Policy
+                </NavLink>
                 <Nav.Link
                   className="ContactUS"
                   as={HashLink}
@@ -169,7 +173,7 @@ const Navbar = () => {
       >
         fdss
       </div>
-      <div >
+      <div>
         <AboutUs />
       </div>
     </>
